@@ -1,0 +1,92 @@
+
+.whatwedo {
+    padding: 2rem;
+}
+  
+.product-card {
+    position: relative; /* Add this to establish a stacking context */
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #3F2305;
+    transition: width 0.3s ease-out;
+}
+
+.product-card:hover::before {
+    width: 100%;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+.whatwedo h1 {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 0;
+    font-size: 36px;
+    color: #3F2305;
+}
+
+.whatwedo hr {
+    width: 40px;
+    height: 1px;
+    background-color: #3F2305;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .whatwedo {
+        padding: 0;
+    }
+    .whatwedo h1 {
+        font-size: 30px;
+    }
+    .whatwedo p {
+        font-size: 15px;
+    }
+    .product-image {
+        width: 100px;
+        height: 120px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+    .product-info {
+        padding: 10px;
+    }
+    .product-card {
+        margin-bottom: 20px;
+    }
+    .product-card::before {
+        height: 2px;
+    }
+    
+}

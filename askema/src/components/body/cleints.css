@@ -1,0 +1,69 @@
+.clients{
+    /* background: #fff; */
+    text-align: center;  
+    margin: 50px; 
+}
+
+.clients h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 0;
+    font-size: 36px;
+    color: #3F2305;
+}
+
+.clients hr{
+    width: 40px;
+    height: 1px;
+    background-color: #3F2305;
+    margin-bottom: 20px;
+}
+
+.clients p{
+    font-size: 20px;    
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 0;
+    /* color: #fff; */
+}
+
+.clients_logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients_logos img{
+    max-width: 500px;
+    width: 140px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10%;
+    /* padding: 10px; */
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(0 0 0.1rem rgb(231, 215, 215));
+}
+
+@media screen and (max-width: 810px){
+    .clients{
+        padding: 0;
+    }
+    .clients h1{
+        font-size: 30px;
+    }
+    .clients p{
+        font-size: 15px;
+    }
+
+    .logo3, .logo4{
+        display: none;
+    }
+    
+    .clients_logos{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* cleints.css */

@@ -1,0 +1,25 @@
+
+
+.footer{
+
+    width: 100%;     
+    background-color: rgb(201, 40, 22);
+
+}
+
+.footer ul li a{
+    color: #ccc;
+}
+
+.footer ul li a:hover{
+    color: #fff;
+    /* background-color: white; */
+}
+
+.footer p{
+    color : black;
+}
+
+.footer p a{
+    color: black;
+}

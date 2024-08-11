@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.home{
+    position: relative;
+}
+
+.svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-Index: -1;
+}
+
+
+
+.home  hr{
+    color: white;
+    width: 0;
+    
+}

@@ -1,0 +1,47 @@
+.news-list {
+    padding: 20px;
+  }
+  
+  .news-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .news-list th, .news-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    max-width: 300px;
+    overflow-wrap: break-word;
+  }
+  
+  .news-list tr:nth-child(even) {
+    background-color: #f7f2f7;
+  }
+  
+  .news-list th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .edit-link {
+    margin: 5px;
+    padding: 5px 20px;
+    background-color: #4CAF50;
+    border: 1px solid yellow;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: red;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    /* add spinner */
+  }
+  

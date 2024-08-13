@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",                 
+    "dev": "nodemon app.js",                
+    "build": "echo \"No build step necessary for Node.js backend\"", 
+    "test": "mocha",                        
+    "lint": "eslint .",                     
+    "prestart": "npm run build",          
+    "start:prod": "NODE_ENV=production node app.js"  
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import 'react-toastify/dist/ReactToastify.css';
 import './news.css';
 
 
@@ -12,7 +11,7 @@ function News() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/news');
+                const response = await axios.get(`https://admin.askemaengineering.com/news`);
                 function arrayBufferToBase64(buffer) {
                     let binary = '';
                     let bytes = new Uint8Array(buffer);

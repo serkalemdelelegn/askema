@@ -10,7 +10,7 @@ const NewsList = () => {
   useEffect(() => {
     const fetchNewsItems = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/news');
+        const response = await axios.get(`https://admin.askemaengineering.com/news`);
         const arrayBufferToBase64 = (buffer) => {
           let binary = '';
           const bytes = new Uint8Array(buffer);
@@ -38,7 +38,7 @@ const NewsList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/news/${id}`);
+      await axios.delete(`https://admin.askemaengineering.com/news/${id}`);
       setNewsItems(newsItems.filter(item => item.id !== id));
       alert('News deleted successfully!');
     } catch (error) {

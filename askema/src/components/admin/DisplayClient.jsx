@@ -11,7 +11,7 @@ const TestimonialsList = () => {
 
   const fetchTestimonials = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/clients');
+      const response = await axios.get(`https://admin.askemaengineering.com/clients`);
       setTestimonials(response.data);
     } catch (error) {
       console.error('Error fetching testimonials:', error);
@@ -20,7 +20,7 @@ const TestimonialsList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/clients/${id}`);
+      await axios.delete(`https://admin.askemaengineering.com/clients/${id}`);
       setTestimonials(testimonials.filter(testimonial => testimonial.id !== id));
       alert('Testimonial deleted successfully!');
     } catch (error) {

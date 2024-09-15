@@ -21,7 +21,7 @@ const NewsEdit = () => {
     if (id) {
       const fetchData = async () => {
         try {
-          const response = await axios.get(`http://localhost:3000/news/${id}`);
+          const response = await axios.get(`https://admin.askemaengineering.com/news/${id}`);
           setFormData({ ...response.data });
         } catch (error) {
           console.error('Error fetching news item:', error);
@@ -61,10 +61,10 @@ const NewsEdit = () => {
 
     try {
       if (id) {
-        await axios.put(`http://localhost:3000/news/${id}`, formData);
+        await axios.put(`https://admin.askemaengineering.com/news/${id}`, formData);
       } else {
         // console.log(formData.image, 'hey what do u think')
-        await axios.post('http://localhost:3000/news', formData);
+        await axios.post(`https://admin.askemaengineering.com/news`, formData);
       }
       alert('News updated successfully!');
       // navigate('/news');

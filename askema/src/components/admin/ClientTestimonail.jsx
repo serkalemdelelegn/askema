@@ -18,7 +18,7 @@ const AddClientTestimonial = () => {
     if (id) {
       const fetchData = async () => {
         try {
-          const response = await axios.get(`http://localhost:3000/clients/${id}`);
+          const response = await axios.get(`https://admin.askemaengineering.com/clients/${id}`);
           setFormData({
             name: response.data.name,
             testimonial: response.data.testimonial,
@@ -51,9 +51,9 @@ const AddClientTestimonial = () => {
     try {
       let response;
       if (id) {
-        response = await axios.put(`http://localhost:3000/clients/${id}`, formDataToSend);
+        response = await axios.put(`https://admin.askemaengineering.com/clients/${id}`, formDataToSend);
       } else {
-        response = await axios.post('http://localhost:3000/clients', formDataToSend);
+        response = await axios.post(`https://admin.askemaengineering.com/clients`, formDataToSend);
       }
 
       if (response.data.success) {

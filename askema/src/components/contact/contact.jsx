@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import './contact.css'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import toast, { Toaster } from 'react-hot-toast';
 import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
 
@@ -30,7 +29,7 @@ export default function Contact() {
 
   return (
     <div className='bodyOfcontact'>
-      <ToastContainer />
+      <Toaster  />
       <section className='contact'>
         <div className="content">
           <h2>{t("Contact Us")} </h2>
@@ -96,9 +95,7 @@ export default function Contact() {
               </div>
               <div className="inputBox">
                 <input type="submit" name="send" value="Send"  />
-                <ToastContainer />
               </div>
-
             </form>
           </div>
         </div>

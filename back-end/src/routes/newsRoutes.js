@@ -8,6 +8,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 // Get all news or news by id
+// router.get('/', (req,res)=>{return  res.status(200).send('Hello, World');});
 router.get('/:newsId?', newsController.getNews);
 
 // Create new news

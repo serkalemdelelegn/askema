@@ -15,6 +15,12 @@ yarn.lock
 
 /build
 
+# Ignore compiled code
+*.class
+*.pyc
+*.pyo
+*.exe
+*.dll
 
 logs/
 *.log
@@ -54,3 +60,5 @@ dump/
 
 # Docker files
 docker-compose.override.yml
+
+.git/
